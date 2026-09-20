@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jose Morales — EE Portfolio</title>
+<meta name="description" content="Personal engineering portfolio of Jose Meza, Electrical Engineering student at Cal Poly Pomona.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Jose Morales</a>
+    <nav class="nav">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">Electrical Engineering Student · California State Polytechnic University Pomona</p>
+    <h1>Jose Meza</h1>
+    <p class="hero-sub">Electrical Engineering student with an interes for RF, communications, Embedded Systems, and Aerospace. This is where I keep my personal projects, builds, and documentation.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">A running log of things I've built. Click any card for the full write-up.</p>
+
+    <div class="project-grid">
+
+      <!--
+        PROJECT CARD TEMPLATE — copy this block to add a new project.
+        1. Duplicate the <a class="project-card"> block below.
+        2. Update the href to a new file, e.g. projects/my-new-project.html
+        3. Update the image, tag, title, and description.
+        4. Copy projects/project-template.html, rename it, and fill it in for the detail page.
+      -->
+
+      <a href="projects/project-template.html" class="project-card">
+        <div class="project-thumb">
+          <img src="images/projects/placeholder.svg" alt="Project thumbnail">
+        </div>
+        <div class="project-card-body">
+          <span class="tag">AI Assistant</span>
+          <h3>AI</h3>
+          <p></p>
+        </div>
+      </a>
+
+      <div class="project-card project-card-empty">
+        <div class="project-card-body">
+          <span class="tag">New Project</span>
+          <h3>+</h3>
+          <p></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section section-alt">
+  <div class="container about-grid">
+    <div>
+      <h2 class="section-title">About</h2>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="about-card">
+      <h3>Focus Areas</h3>
+      <ul class="focus-list">
+        <li>KiCad</li>
+        <li>PCB design</li>
+        <li>Embedded Systems</li>
+        <li>Hardware / Bench Design</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Have a project idea, opportunity, or just want to talk EE? Send a message below.</p>
+
+    <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="form-status" class="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Jose Morales. Built with HTML/CSS/JS.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
