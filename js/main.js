@@ -15,7 +15,7 @@ if (form) {
 
     const action = form.getAttribute("action");
     if (!action || action.includes("YOUR_FORM_ID")) {
-      statusEl.textContent = "Contact form isn't set up yet — see README for the 2-minute Formspree setup.";
+      statusEl.textContent = "Contact form isn't set up yet ";
       statusEl.style.color = "#e0a13b";
       return;
     }
